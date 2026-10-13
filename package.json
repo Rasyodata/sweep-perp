@@ -1,0 +1,15 @@
+{
+  "name": "sweep-perp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/ensure-deps.mjs && node src/server.mjs",
+    "dev": "node scripts/ensure-deps.mjs && node --watch src/server.mjs",
+    "test": "node scripts/ensure-deps.mjs && node --test test/*.test.mjs",
+    "build": "node scripts/ensure-deps.mjs && node scripts/build.mjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1"
+  }
+}
